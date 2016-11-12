@@ -30,6 +30,7 @@ public partial class MainWindow: Gtk.Window
 			"Open", Gtk.ResponseType.Accept);
 		fc.Filter = new FileFilter ();
 		fc.Filter.AddPattern ("*.jpg");
+		fc.Filter.AddPattern ("*.JPG");
 		fc.SelectMultiple = true;
 
 		if (fc.Run () == (int)Gtk.ResponseType.Accept) {
